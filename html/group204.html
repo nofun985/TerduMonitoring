@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css"> <!--Main css-->
+    <link rel="stylesheet" href="../css/group.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap css-->
+</head>
+<body>
+    <div class="box">
+        <!-- Navigation start -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="../img/logo.jfif" alt="logo"></span>
+                        <span class="title">
+                            <p>Termiz Davlat</p>
+                            <p>Unversiteti</p>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <span class="icon"><i class="fa-solid fa-school"></i></span>
+                        <span class="title">Unversitet</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="./faculties.html">
+                        <span class="icon"><i class="fa-solid fa-microchip"></i></i></span>
+                        <span class="title">Axborot texnalogiyalari</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-square-poll-vertical"></i></span>
+                        <span class="title">Iqtisodiyot va turizm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-atom"></i></span>
+                        <span class="title">Fizika matematika</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                        <span class="title">Arxitekura va Qurilish</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-language"></i></span>
+                        <span class="title">Xorijiy Filalogiya</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar section -->
+        <div class="navbar_container">
+            <div class="navbar">
+                <div class="toggle">
+                    <i class="fa-solid fa-align-left"></i>
+                </div>
+                <div class="class_info">
+                    Matematika informatika 204-gurux
+                </div>
+                <div class="user">
+                    <img src="../img/user.jpg" alt="user">
+                </div>
+            </div>
+        </div>
+        <!-- Main section start -->
+        <div class="main">
+            <!-- Course card -->
+            <div class="course-card">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="fas fa-user-graduate"></i>
+                                <h1>1-kurs</h1>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="fas fa-user-graduate"></i>
+                                <h1>2-kurs</h1>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="fas fa-user-graduate"></i>
+                                <h1>3-kurs</h1>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-6 col-lg-3">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="fas fa-user-graduate"></i>
+                                <h1>4-kurs</h1>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Daily data -->
+            <div class="daily-data">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <div class="daily-attendance">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="daily-attendance__info pacific-blue">
+                                        <div id="num1" class="pacific-blue"></div>
+                                        <p>Umumiy</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="daily-attendance__info green-pigment">
+                                        <div id="num2" class="green-pigment"></div>
+                                        <p>Darsda</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="daily-attendance__info red-salsa">
+                                        <div id="num3" class="red-salsa"></div>
+                                        <p>Kelmagan</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="daily-attendance__info jungle-green">
+                                        <div id="num4" class="jungle-green"></div>
+                                        <p>Davomat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="weekly-info">
+                                        <div class="test">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <div id="number1">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <svg class="percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110px" height="110px">
+                                                    <defs>
+                                                        <linearGradient id="GradientColor">
+                                                        <stop offset="0%" stop-color="#1488CC" />
+                                                        <stop offset="100%" stop-color="#2B32B2" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <circle class="circle1" cx="55" cy="55" r="45" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <h6>Dushanba</h6>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="weekly-info">
+                                        <div class="test">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <div id="number2">
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <svg class="percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110px" height="110px">
+                                                    <defs>
+                                                        <linearGradient id="GradientColor">
+                                                        <stop offset="0%" stop-color="#1488CC" />
+                                                        <stop offset="100%" stop-color="#2B32B2" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <circle class="circle2" cx="55" cy="55" r="45" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <h6>Seshanba</h6>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="weekly-info">
+                                        <div class="test">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <div id="number3">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <svg class="percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110px" height="110px">
+                                                    <defs>
+                                                        <linearGradient id="GradientColor">
+                                                        <stop offset="0%" stop-color="#1488CC" />
+                                                        <stop offset="100%" stop-color="#2B32B2" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <circle class="circle3" cx="55" cy="55" r="45" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <h6>Chorshanba</h6>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="weekly-info">
+                                       <div class="test">
+                                        <div class="outer">
+                                            <div class="inner">
+                                                <div id="number4">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <svg class="percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110px" height="110px" class="percent">
+                                                <defs>
+                                                    <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#1488CC" />
+                                                    <stop offset="100%" stop-color="#2B32B2" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <circle class="circle4" cx="55" cy="55" r="45" stroke-linecap="round" />
+                                        </svg>
+                                       </div>
+                                        <h6>Payshanba</h6>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="weekly-info">
+                                        <div class="test">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <div id="number5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <svg class="percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110px" height="110px">
+                                                <defs>
+                                                    <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#1488CC" />
+                                                    <stop offset="100%" stop-color="#2B32B2" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <circle class="circle5" cx="55" cy="55" r="45" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <h6>Juma</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Students info -->
+                        <div class="students-info__1">
+                            <div class="student-info__items">
+                                <tr>
+                                    <td>
+                                        <div class="student-info__header">
+                                            <div class="row">
+                                                <div class="col-1">№</div>
+                                                <div class="col-3">Familya</div>
+                                                <div class="col-3">Ism</div>
+                                                <div class="col-3">Otasining ismi</div>
+                                                <div class="col-2">Status</div>
+                                            </div>
+                                        </div>
+                                        <button id="myBtn1" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-sm-1 col-md-1 col-lg-1">1</div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-3">Abdilamiyeva</div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-3">Noila</div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-3">Ramidovna</div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal1" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h6>Abdilamiyeva Noila</h6>
+                                                <span id="close" class="close1"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar2.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Noila</p>
+                                                        <p><span>Familya: </span>Abdilamiyeva</p>
+                                                        <p><span>Sharif: </span>Ramidovna</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn2" class=" not-come student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">2</div>
+                                                    <div class="col-3">Panjiyev</div>
+                                                    <div class="col-3">Zohid</div>
+                                                    <div class="col-3">Zokir o'g'li</div>
+                                                    <div class="col-2">kelmagan</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal2" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Panjiyev Zohid</h2>
+                                                <span id="close" class="close2"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Panjiyev</p>
+                                                        <p><span>Familya: </span>Zohid</p>
+                                                        <p><span>Sharif: </span>Zokir o'g'li</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn3" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">3</div>
+                                                    <div class="col-3">Jumayeva</div>
+                                                    <div class="col-3">Iroda</div>
+                                                    <div class="col-3">Faxriddin qizi</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal3" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Jumayeva Iroda</h2>
+                                                <span id="close" class="close3"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar2.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Jumayeva</p>
+                                                        <p><span>Familya: </span>Iroda</p>
+                                                        <p><span>Sharif: </span>Faxriddin qizi</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn4" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">4</div>
+                                                    <div class="col-3">Mengniyozov</div>
+                                                    <div class="col-3">Og'abek</div>
+                                                    <div class="col-3">Baxtiyor o'g'li</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal4" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Mengniyozov Og'abek</h2>
+                                                <span id="close" class="close4"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Mengniyozov</p>
+                                                        <p><span>Familya: </span>Og'abek</p>
+                                                        <p><span>Sharif: </span>Baxtiyor o'g'li</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn5" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">5</div>
+                                                    <div class="col-3">Xushmamatova</div>
+                                                    <div class="col-3">Zulxayo</div>
+                                                    <div class="col-3">Alisher qizi</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal5" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Xushmamatova Zulxayo</h2>
+                                                <span id="close" class="close5"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar2.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Zulxayo</p>
+                                                        <p><span>Familya: </span>Xushmamatova</p>
+                                                        <p><span>Sharif: </span>Alisher qizi</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn6" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">6</div>
+                                                    <div class="col-3">Isoqov</div>
+                                                    <div class="col-3">Temurbek</div>
+                                                    <div class="col-3">Xusniddinovich</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal6" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Isoqov Temurbek</h2>
+                                                <span id="close" class="close6"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="../img/img_avatar.png" alt="student avatar">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p><span>Ism: </span>Temurbek</p>
+                                                        <p><span>Familya: </span>Isoqov</p>
+                                                        <p><span>Sharif: </span>Xusniddinovich</p>
+                                                        <p><span>Tel: </span>+998907773344</p>
+                                                        <p><span>Manzil: </span>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="student-attendance">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5>Dars qoldirish soatlari</h5>
+                                                                </div>
+                                                                <div class="col-4 ">
+                                                                    <p>Semester</p>
+                                                                    <h5>16 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan oy</p>
+                                                                    <h5>6 soat</h5>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <p>O'tgan hafta</p>
+                                                                    <h5>2 soat</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn7" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">7</div>
+                                                    <div class="col-3">Mambetov</div>
+                                                    <div class="col-3">Muhiddin</div>
+                                                    <div class="col-3">Adamboy o'g'li</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal7" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close7"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn8" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">8</div>
+                                                    <div class="col-3">Husanov</div>
+                                                    <div class="col-3">Jmashidbek</div>
+                                                    <div class="col-3">Sayidali o'g'i</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal8" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close8"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn9" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">9</div>
+                                                    <div class="col-3">Abdig'afforov</div>
+                                                    <div class="col-3">Xasan</div>
+                                                    <div class="col-3">Mamarajab o'g'i</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal9" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close9"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtnX" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">10</div>
+                                                    <div class="col-3">Farmonova</div>
+                                                    <div class="col-3">Shaxnoza</div>
+                                                    <div class="col-3">Abdumalik qizi</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModalX" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="closeX"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn11" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">11</div>
+                                                    <div class="col-3">Zaburov</div>
+                                                    <div class="col-3">Doston</div>
+                                                    <div class="col-3">Yashiuzok o'g'li</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal11" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close11"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn12" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">12</div>
+                                                    <div class="col-3">Ro'zmetov</div>
+                                                    <div class="col-3">Juratbek</div>
+                                                    <div class="col-3">Javlonbek o'g'i</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal12" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close12"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn13" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">13</div>
+                                                    <div class="col-3">Buriyeva</div>
+                                                    <div class="col-3">Farangiz</div>
+                                                    <div class="col-3">Ravshanbek qizi</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal13" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close13"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn14" class="not-come student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">14</div>
+                                                    <div class="col-3">Nomozov</div>
+                                                    <div class="col-3">Asror</div>
+                                                    <div class="col-3">Xayitmurod o'g'li</div>
+                                                    <div class="col-2">kelmagan</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal14" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close14"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="myBtn15" class="student_btn">
+                                            <div class="student-info__item">
+                                                <div class="row">
+                                                    <div class="col-1">15</div>
+                                                    <div class="col-3">Abdullayev</div>
+                                                    <div class="col-3">Shoxrux</div>
+                                                    <div class="col-3">Ulug'bek o'g'li</div>
+                                                    <div class="col-2">darsda</div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <div id="myModal15" class="modal">
+    
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2>Modal Header</h2>
+                                                <span id="close" class="close15"><i class="fas fa-times-circle"></i></i></span>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Some text in the Modal Body</p>
+                                                <p>Some other text...</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                              </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daily time -->
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="daily-time">
+                            <div class="daily-time__timer">
+                                <div class="daily-time__items">
+                                 <div class="daily_outer">
+                                     <div class="daily_inner">
+                                         <div id="daily_number" class="daily_number">
+                                             <h5>2</h5>
+                                             <span>para</span>
+                                             <p>38:56 <span>left</span></p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <svg class="daily_percent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="percent">
+                                         <defs>
+                                             <linearGradient id="GradientColorX">
+                                             <stop offset="0%" stop-color="#8E2DE2" />
+                                             <stop offset="100%" stop-color="#4A00E0" />
+                                             </linearGradient>
+                                         </defs>
+                                         <circle class="daily_circle" cx="82" cy="82" r="70" stroke-linecap="round" />
+                                 </svg>
+                                </div>
+                                 <h6>Juma</h6>
+                             </div>
+                             <div class="science">
+                                 <h4><span>Fan: </span>Pythonda dasturlash asoslari</h4>
+                             </div>
+                             <div class="science">
+                                <h4><span>Auditoriya: </span>218-xona</h4>
+                            </div>
+                            <div class="calendar">
+                                <div id="dycalendar">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Students info -->
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="../js/modal.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/weekly_info.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/cd8a1d83af.js" crossorigin="anonymous"></script> <!--Fon awesome-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap js-->
+    <script>
+        dycalendar.draw({
+        target: '#dycalendar',
+        type: 'month',
+        dayformat: 'full',
+        montformat: 'full',
+        highlighttargetdate: true,
+        prevnextbutton: 'show'
+        })
+    </script>
+</body>
+</html>

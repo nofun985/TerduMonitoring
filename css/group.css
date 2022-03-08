@@ -1,0 +1,977 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,400;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #4187f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #8E2DE2, #4A00E0);
+    border-radius: 4px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* Navigation start */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.navigation {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    background: #2b343b;
+    border-left: 10px solid #2b343b;
+    transition: .5s;
+    overflow: hidden;
+    border-right: 10px solid #4187f6;
+}
+
+.navigation.active {
+    width: 80px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: .9rem;
+}
+
+.navigation ul li.active{
+    background-color: #4187f6;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li:nth-child(1) .icon img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navigation ul li:nth-child(1) .title {
+    padding-left: 20px;
+    line-height: 0;
+    text-align: center;
+    margin-top: 22px;
+}
+
+
+.navigation ul li:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    font-weight: 200;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.navigation ul li a .icon i{
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 30px 30px 0 10px #4187f6;
+    pointer-events: none;
+}
+
+.navigation ul li.active a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 30px -30px 0 10px #4187f6;
+    pointer-events: none;
+}
+
+.navbar_container{
+    position: absolute;
+    width: calc(100% - 250px) !important;
+    left: 250px; 
+    height: 60px;
+    background: #4187f6;
+    transition: .5s;
+}
+
+.navbar_container.active{
+    width: calc(100% - 80px) !important;
+    left: 80px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px!important;
+}
+
+.toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #4187f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.class_info{
+    background-color: #fff;
+    color: #4187f6;
+    padding: 5px 10px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* main section start */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.main {
+    position: absolute;
+    width: calc(100% - 250px) !important;
+    left: 250px;
+    min-height: 100vh;
+    background-color: #4187f6;
+    transition: .5s;
+    top: 60px;
+}
+
+.main.active{
+    width: calc(100% - 80px) !important;
+    left: 80px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* Course card start */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.course-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.course-card .row {
+    width: 100%;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 2rem;
+    border: none;
+    font-weight: 900;
+    width: 100%;
+    margin: 5px;
+    border-radius: 15px;
+    transition: .3s;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dropbtn i {
+    font-size: 2rem;
+}
+
+.dropbtn h1 {
+    font-size: 1.5rem;
+} 
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    margin: 0 5px;
+}
+  
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 15px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* Daily data start */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.daily-data {
+    margin-top: 20px;
+}
+
+.daily-data .row {
+    margin: 0;
+}
+
+.daily-attendance {
+    background-color: #fff;
+    border-radius: 15px;
+}
+.daily-attendance .row:nth-child(1) .col-sm-12{
+    padding: 5px !important;
+}
+
+.daily-attendance .row:nth-child(2) .col{
+    padding: 5px !important;
+}
+
+.daily-time {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.daily-attendance__info{
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.daily-attendance__info p {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.pacific-blue {
+    color: #0496FF;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    opacity: .8;
+}
+
+.green-pigment {
+    color: #3FA34D;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    opacity: .8;
+}
+
+.red-salsa {
+    color: #ED474A;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    opacity: .8;
+}
+
+.jungle-green {
+    color: #43AA8B;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    opacity: .8;
+}
+
+/* weekly info */
+.weekly-info {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.test {
+    display: grid;
+    place-items:  center;
+}
+
+.weekly-info h6 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.outer {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 8.5px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number1, #number2, #number3, #number4, #number5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.circle1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percent1 2s linear forwards;
+}
+
+@keyframes week-percent1 {
+    100% {
+        stroke-dashoffset: 290;
+    }
+}
+
+.circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percent2 2s linear forwards;
+}
+
+@keyframes week-percent2 {
+    100% {
+        stroke-dashoffset: 190;
+    }
+}
+
+.circle3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percent3 2s linear forwards;
+}
+
+@keyframes week-percent3 {
+    100% {
+        stroke-dashoffset: 256;
+    }
+}
+
+.circle4 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percent4 2s linear forwards;
+}
+
+@keyframes week-percent4 {
+    100% {
+        stroke-dashoffset: 220;
+    }
+}
+
+.circle5 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percent5 2s linear forwards;
+}
+
+@keyframes week-percent5 {
+    100% {
+        stroke-dashoffset: 210;
+    }
+}
+
+.percent {
+    display: grid;
+    place-items:  center;
+    top: 0;
+    position: absolute;
+}
+
+/* Course section end */
+
+/* Daily time start */
+.daily-time {
+    padding: 10px;
+}
+
+.daily-time__timer {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.daily-time__items {
+    display: grid;
+    place-items:  center;
+}
+
+.daily-time__timer h6 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.daily_outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 8.5px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.daily_inner {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.daily_circle {
+    fill: none;
+    stroke: url(#GradientColorX);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: week-percentX 2s linear forwards;
+}
+
+@keyframes week-percentX {
+    100% {
+        stroke-dashoffset: 200;
+    }
+}
+
+.daily_percent {
+    display: grid;
+    place-items:  center;
+    top: 0;
+    position: absolute;
+}
+
+.daily_number h5 {
+    font-size: 3rem;
+    display: inline-block;
+    font-weight: 700;
+    color: #8E2DE2;
+    opacity: .8;
+    
+}
+
+.daily_number p {
+    color: #8E2DE2
+}
+
+.daily_number p span {
+    color: #2b343b;
+}
+
+.daily_number span{
+    font-size: .8rem;
+    font-weight: 900;
+    opacity: .5;
+}
+
+.science {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.science h4 {
+    font-size: .9rem;
+    margin: 0;
+    font-weight: 600;
+    opacity: .9;
+}
+/* Calendar */
+.calendar {
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dycalendar {
+    width: 100%;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    #dycalendar {
+        padding: 0 30px;
+    }
+}
+
+  
+
+#dycalendar table {
+    width: 100%;
+    text-align: center;
+    color: #2b343b;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#dycalendar table td:hover {
+    background: linear-gradient(45deg, #FF512F, #DD2476);
+    color: #fff;
+    border-radius: 4px;
+    border-spacing: 5px !important;
+}
+
+.dycalendar-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dycalendar-span-month-year{
+    border: 2px solid #0496FF;
+    padding: 2px 10px;
+    border-radius: 15px;
+}
+
+
+.dycalendar-month-container .dycalendar-body table tr:nth-child(1) td {
+    background: linear-gradient(45deg, #26a0da, #6dd5ed);
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+} 
+
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date {
+    background: linear-gradient(45deg, #FF512F, #DD2476);
+    color : #fff;
+    border-radius: 4px;
+}
+
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn{
+    border: 2px solid #0496FF;
+    color: #0496FF;
+    width: 1.5em;
+    height: 1.5rem;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Daily time end */
+
+
+/* Students info start */
+
+.students-info__1 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius:  15px;
+    overflow: hidden;
+}
+
+.students-info__2 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius:  15px;
+    display: none;
+    overflow: hidden;
+}
+
+
+.student-info__header {
+    text-align: start;
+    font-size: .8rem;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(243, 241, 241, 0.541);
+    transition: .5s;
+    border-left: 5px solid #0496FF;
+    border-right: 5px solid #0496FF;
+    border-top: 1px solid #0496ff00;
+    border-bottom: 1px solid #0496ff00;
+}
+
+.student-info__items {
+    padding: 10px;
+}
+
+.student_btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(243, 241, 241, 0.541);
+    transition: .3s;
+    border-left: 5px solid #3FA34D;
+    border-right: 5px solid #3FA34D;
+    border-top: 1px solid #0496ff00;
+    border-bottom: 1px solid #0496ff00;
+}
+
+.not-come {
+    border-left: 5px solid #ED474A !important;
+    border-right: 5px solid #ED474A !important;
+}
+
+button.student_btn:hover {
+    background: #5BC0EB;
+    transform: scale(1.009);
+    box-shadow: none;
+}
+
+button.student_btn:nth-of-type(odd):hover {
+    background-color: #5BC0EB;
+    transform: scale(1.01);
+    box-shadow: none;
+}
+
+button.student_btn:nth-of-type(odd){
+    background-color: #fff;
+}
+
+.student-info__item {
+    text-align: start;
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 600px !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 15px !important;
+}
+
+@media only screen and (max-width: 480px){
+    .modal-content{
+        width: 100% !important;
+    }
+}
+  
+@-webkit-keyframes animatetop {
+    from {top:-100px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+#close {
+    color: white;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: .3s;
+}
+  
+#close:hover,
+#close:focus {
+    color: #ED474A;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .8;
+    transform: rotate(90deg);
+}
+  
+.modal-header {
+    padding: 12px 10px 8px 10px !important;
+    background-color: #736CED;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border: none;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+}
+  
+.modal-body {padding: 2px 16px;}
+  
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #736CED;
+    color: white;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.modal-body .row .col-5 img {
+    width: 200px;
+}
+
+.student-attendance {
+    margin-top: 20px;
+    border: 4px solid #736CED;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+.student-attendance .row {
+    text-align: center;
+}
+
+.student-attendance .row div:nth-child(1) {
+    margin-top: 10px;
+}
+
+.student-attendance .row div {
+    margin-top: 20px;
+}
+
+
+.student-attendance .row .col-12 h5{
+    background-color: #726ceda9;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.student-attendance .row .col-4 p {
+    background-color: #0496ff96;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.student-attendance .row .col-4 h5 {
+    background-color: #ed474acb;
+    padding: 5px 8px;
+    border-radius: 10px;
+    color: #fff;
+}
+/* Students info end */
+
+/* Resposive */
+
+@media (max-width: 991px){
+    .navigation{
+        left: -260px;
+    }
+
+    .navigation.active{
+        width: 260px;
+        left: 0;
+    }
+
+    .navbar_container{
+        width: 100% !important;
+        left: 0;
+    }
+
+    .navbar_container.active{
+        left: 260px;
+        width: calc(100% - 260px) !important;
+    }
+
+    .main{
+        width: 100% !important;
+        left: 0;
+    }
+    .main.active{
+        left: 260px;
+        width: calc(100% - 260px) !important;
+    }
+}
+
+@media (max-width: 480px){
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 10;
+    }
+
+    .navigation.active {
+        width: 100% !important;
+        left: 0;
+        border-right: none;
+    }
+
+    .main.active{
+        display: none;
+    }
+
+    .navbar_container.active{
+        z-index: 11;
+    }
+
+    .class_info{
+        font-size: .8rem;
+    }
+
+    .navbar_container.active .navbar{
+        flex-direction: row-reverse;
+        background-color: #2b343b;
+    }
+
+    .navbar_container.active .navbar .class_info{
+        display: none;
+    }
+
+    .navbar_container.active .navbar .user{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #4187f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #8E2DE2, #4A00E0);
+    border-radius: 4px;
+}
