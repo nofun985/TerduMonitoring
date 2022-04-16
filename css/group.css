@@ -7,13 +7,17 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #2b343b;
 }
 
 .box{
     position: relative;
     width: 100%;
+    max-width: 1800px;
 }
 
 ::-webkit-scrollbar{
@@ -59,7 +63,7 @@ body {
     list-style: none;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    font-size: .9rem;
+    font-size: .9rem;   
 }
 
 .navigation ul li.active{

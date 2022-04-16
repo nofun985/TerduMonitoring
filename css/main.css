@@ -7,13 +7,17 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #2b343b;
 }
 
 .box{
     position: relative;
     width: 100%;
+    max-width: 1800px;
 }
 
 ::-webkit-scrollbar{
@@ -174,16 +178,68 @@ body {
     position: relative;
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5rem;
-    background: #fff;
+    background-color: #fff;
     border-radius: 50%;
     color: #4187f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.toggle_item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
 }
 
+.toggle-line{
+    width: 25px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #4187f6;
+    transition: .5s;
+}
+
+.toggle-line::before,
+.toggle-line::after{
+    content: '';
+    width: 25px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #4187f6;
+    transition: .5s;
+    position: absolute;
+}
+
+.toggle-line::before{
+    transform: translateY(8px);
+    width: 18px;
+    transition: .5s;
+}
+
+.toggle-line::after{
+    transform: translateY(-8px);
+    width: 15px;
+    transition: .5s;
+}
+
+
+.open .toggle-line::before{
+    left: 14.5px;
+    transition: .5s;
+}
+
+.open .toggle-line::after{
+    left: 17px;
+    transition: .5s;
+}
 
 .class_info{
     background-color: #fff;
@@ -292,5 +348,216 @@ body {
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-             /* faculties start */
+             /* main start */
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+#particles-js{
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.terdu-title{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.terdu-title__items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.terdu-title__box{
+    display: grid;
+    place-items: center;
+}
+
+.terdu-title__box img{
+    border-radius: 50%;
+}
+
+.terdu-title__box h5{
+    margin-top: 10px;
+    font-weight: 700;
+    color: #264124;
+}
+
+.terdu-title__box h6{
+    background: #4187f6;
+    padding: 5px 8px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.terdu-relative{
+    position: relative;
+}
+
+.terdu-studentNumber{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.terdu-studentNumber::before{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(270deg, #24C6DC, #514A9D);
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+    left: -150px;
+    border-radius: 40px;
+    transform: rotate(45deg);
+}
+.terdu-studentNumber::after{
+    content: '';
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #24C6DC, #514A9D);
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    right: -150px;
+    border-radius: 40px;
+    transform: rotate(45deg);
+}
+
+.terdu-number{
+    margin-top: 12px;
+    border-radius: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .5s;
+}
+
+.terdu-number__item{
+    text-align: center;
+    padding: 0;
+    padding-top: 5px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.terdu-number:hover{
+    transform: scale(1.05);
+}
+
+.terdu-number__item h4{
+    color: #4187f6;
+    background-color: #fff;
+    font-weight: 900;
+    display: inline;
+    padding: 0 5px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.terdu-number__item p{
+    font-size: .8rem;
+    color: #fff;
+    background-color: #4187f6;
+    font-weight: 700;
+    display: inline;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* chart start */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.chart-year{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+             /* chart end */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.terdu-social{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 24px;
+}
+
+
+
+.terdu-social__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.terdu-social__item a{
+
+    color: #fff;
+    padding: 0px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.terdu-social__item a i{
+    transition: .3s;
+}
+
+.telegram-color{
+    background-color: #0088CC;
+}
+
+.facebook-color{
+    background-color: #4267B2;
+}
+
+.tel-color{
+    background-color: #2EB086;
+}
+
+.mail-color{
+    background-color: #FF6B6B;
+}
+
+.terdu-social__item a:hover i{
+    transform: scale(1.3);
+    color: #fff;
+}
+
+
+
+
+
+
+

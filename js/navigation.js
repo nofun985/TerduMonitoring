@@ -20,3 +20,15 @@ toggle.onclick = function(){
     main.classList.toggle('active');
     navbar_container.classList.toggle('active');
 }
+let toggle_item = document.querySelector('.toggle_item');
+let openToggle = false;
+
+toggle_item.addEventListener('click', ()=>{
+    if(!openToggle){
+        toggle_item.classList.add('open');
+        openToggle = true;
+    }else{
+        toggle_item.classList.remove('open');
+        openToggle = false;
+    }
+})
